@@ -16,7 +16,7 @@ int ft_error(char *msg)
 
 int check_pos(float x, float y, float center_x, float center_y, float radius)
 {
-	float distance = sqrt((x - center_x) * (x - center_x) + (y - center_y) * (y - center_y));
+	float distance = sqrtf((x - center_x) * (x - center_x) + (y - center_y) * (y - center_y));
 	if (distance <= radius)
 	{
 		if ((distance - radius) < 1.0000000)
